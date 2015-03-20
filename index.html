@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Business Company - Motto goes here</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/style.css" title="preferred"/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500' rel='stylesheet' type='text/css'>
+    <script src="js/js.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="welcome">
+			<div id="logo">
+				<div>
+					<img src="img/logo.png" alt="PIC MISSING"><!-- THIS IS the Company Logo -->
+					<h1><!-- THIS IS the Company Name -->
+						Business Company
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div id="center"><!-- THIS IS the Center DIV. It holds the Customer Information Lookup. Also the Customer-specific Options. Also the Customer Call Log. -->
+			<div id="c1"><!-- THIS IS the 1st of 2 Center Pieces. It holds Customer Lookup and Options.  -->
+				<div id="customer">
+					<form id="register" method="post">
+							<h2><b>Customer Info / Look-Up</b></h2>
+							<div id="names">
+								<input id="nameFirst" type="text" required="" placeholder="FIRST" name="nameFirst">
+								<input id="nameMiddleInit" type="text" required="" placeholder="MI (NOT IN USE)" name="nameMiddleInit">
+								<input id="nameLast" type="text" required="" placeholder="LAST (NOT IN USE)" name="nameLast">
+							</div>
+							<div id="email-tel">
+								<input id="email" type="email" required="" placeholder="Email (NOT IN USE)" name="email">
+								<input id="tel" type="tel" required="" placeholder="Phone (NOT IN USE)" name="tel">
+							</div>
+							<input id="keyword" type="text" required="" placeholder="Keywords (NOT IN USE)" name="keyword">
+							<input type="submit" value="Search" style="float:none">
+					</form>
+				</div>
+				<div id="options">
+					<form id="optionBox">
+							<h2><b>Caller-specific Options</b></h2>
+						<div id="custOptTop">
+							<div id="VIP" class="dark" onclick="colorSwitchVIP()"> <b>V.I.P.</b> </div>
+							<div id="TM" class="dark" onclick="colorSwitchTele()"> <b>Telemarketer</b> </div>
+							<div id="Rude" class="dark" onclick="colorSwitchRude()"> <b>RUDE</b> </div>
+						</div>
+						<div id="custOptBot">
+							This caller has ## calls logged. <br> This caller IS a client. <br> This caller IS NOT the devil.
+							<input id="notes" type="text" required="" placeholder="Notes" name="notes">
+							<input id="save" type="submit" value="Save" >
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="c2"><!-- THIS IS the 2nd of 2 Center Pieces.  It holds the new form and call log -->
+				<div id="newCall">
+					THIS SECTION WILL HOUSE THE FORM FOR ADDING NEW CALLS.
+				</div>
+				<div id="callLog">
+					THIS SECTION WILL HOUSE THE RECORD OF CALLS FROM THIS CUSTOMER
+				</div>
+			</div>
+			<div id="userOptions">
+				THIS SECTION WILL HOUSE SIMPLE USER OPTIONS. Log Out, ... that might be it
+			</div>	
+			<footer>
+				<div>Having issues? Let us know with this button. ---->> 
+    				<a href="mailto:Andrew@SilvernSoftware.com" class="small radius button" style="font-size:25px;">
+    				Support
+    				</a>
+    			</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
